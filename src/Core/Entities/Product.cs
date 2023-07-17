@@ -10,7 +10,7 @@ namespace Core.Entities
         public DateTime CreatedAt { get; init; }
         public DateTime UpdatedAt { get; init; }
 
-        public ProductCreatedEvent ToClientCreatedEvent()  {
+        public ProductCreatedEvent ToProductCreatedEvent()  {
             return new ProductCreatedEvent
             {
                 Id = Id,
@@ -20,7 +20,7 @@ namespace Core.Entities
             };
         }
 
-        public ProductUpdatedEvent ToClientUpdatedEvent()
+        public ProductUpdatedEvent ToProductUpdatedEvent()
         {
             return new ProductUpdatedEvent()
             {

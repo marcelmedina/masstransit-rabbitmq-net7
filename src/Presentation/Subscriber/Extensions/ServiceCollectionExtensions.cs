@@ -5,7 +5,7 @@ namespace Subscriber.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddMassTransitPublisher(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddMassTransitSubscriber(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddMassTransit(x =>
             {
